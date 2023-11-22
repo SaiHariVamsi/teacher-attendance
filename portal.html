@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Portal</title>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+    
+        h1 {
+            color: #333;
+        }
+    
+        #qr-code-container {
+            margin-top: 20px;
+            text-align: center; /* Center-align the content within the container */
+            display: inline-block; /* Set display property to inline-block */
+        }
+    
+        #change-timer, #stop-timer {
+            margin-top: 20px;
+            color: #555;
+        }
+        p{
+            font-size: x-large;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Teacher Portal</h1>
+    <p>QR code:</p>
+    <div id="qr-code-container"></div>
+
+    
+    <p id="change-timer">QR Code will change in: 10s</p>
+    <p id="stop-timer">QR Codes will stop in: 170s</p>
+
+    <!-- Include your custom JavaScript file after the QR code library -->
+    <script src="qrcode.js"></script>
+</body>
+</html>

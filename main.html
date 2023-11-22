@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporary URL Generator</title>
+</head>
+<body>
+    <div>
+        <label for="content">Content:</label>
+        <input type="text" id="content" name="content">
+        <button onclick="generateTemporaryURL()">Generate Temporary URL</button>
+    </div>
+
+    <script>
+        function generateTemporaryURL() {
+            const content = document.getElementById('content').value;
+            const temporaryURL = `https://yourusername.github.io/repository-name/temporary/${encodeURIComponent(content)}`;
+            alert(`Your temporary URL is: ${temporaryURL}`);
+        }
+    </script>
+</body>
+</html>
