@@ -1,7 +1,7 @@
 var baseRedirectLink = "https://saiharivamsi.github.io/student-attendace/";
 
 // Set the duration for QR code generation in seconds
-var durationInSeconds = 60;
+var durationInSeconds = 10;
 
 var qrCodeContainer = document.getElementById("qr-code-container");
 
@@ -52,8 +52,8 @@ function updateDynamicTimers() {
             document.getElementById("change-timer").innerText = "QR Codes have stopped changing.";
             document.getElementById("stop-timer").innerText = "QR Codes have stopped serving.";
 
-            // Redirect to a different page
-            window.location.href = "complete_page.html"; // Replace with the actual URL of the page
+            // Redirect to the timeout page
+            window.location.href = "timeout.html"; // Replace with the actual URL of the timeout page
         }
 
     }, 10000);
