@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timeout Page</title>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -21,8 +23,16 @@
     </style>
 </head>
 <body>
-    
     <p>The QR codes have stopped changing.</p>
     <h1>Student Roll Nos.</h1>
+    <div id="app">
+        <ul>
+            <ul v-for="roll in studentsArray" :key="roll">
+                <h2>{{roll}}</h2>
+            </ul>
+        </ul>
+    </div>
+    <script src="app.js"></script>
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
 </body>
 </html>
